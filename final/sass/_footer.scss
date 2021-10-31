@@ -1,0 +1,155 @@
+.footer {
+  background-image: linear-gradient(
+    to right,
+    rgba(224, 125, 11, 0.9),
+    rgba(228, 119, 18, 0.6)
+  );
+  grid-column: full-start / full-end;
+  grid-row: 3/4;
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }
+
+  &_col {
+    padding: 1.5rem 2rem;
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 1rem;
+    margin: 0.5rem 0rem;
+    &-active {
+      background-color: white;
+    }
+  }
+}
+
+.footer-box {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr min-content repeat(2, 1fr) min-content 1fr;
+  grid-template-rows: repeat(7, min-content);
+  justify-content: center;
+  align-items: center;
+}
+.svg-main {
+  fill: rgba(224, 125, 11, 0.9);
+
+  width: 6rem;
+  z-index: 3;
+}
+.logoimg {
+  transform: translateY(80%) translateX(1.5%);
+  z-index: 2;
+}
+.col-1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.col-2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.col-3 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.col-4 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.col-5 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.col-6 {
+  grid-column: 6/7;
+  grid-row: 2/3;
+}
+.col-7 {
+  grid-column: 6/7;
+  grid-row: 3/4;
+}
+.col-8 {
+  grid-column: 6/7;
+  grid-row: 4/5;
+}
+.col-9 {
+  grid-column: 6/7;
+  grid-row: 5/6;
+}
+.line-1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.line-2 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.line-3 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.line-4 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.line-5 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.line-6 {
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+.line-7 {
+  grid-column: 5/6;
+  grid-row: 3/4;
+}
+.line-8 {
+  grid-column: 5/6;
+  grid-row: 4/5;
+}
+.line-9 {
+  grid-column: 5/6;
+  grid-row: 5/6;
+}
+.main-box {
+  background-color: white;
+  width: 60%;
+  text-align: center;
+
+  border-radius: 5rem;
+  padding: 6rem;
+  grid-column: 3/5;
+  grid-row: 1/6;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  transform: translateX(35%);
+}
+
+.main-sec {
+  background-color: transparent;
+  width: 100%;
+  height: 50rem;
+  text-align: center;
+  border: solid 2px white;
+  border-radius: 5rem;
+  padding: 6rem;
+  grid-column: 3/5;
+  grid-row: 1/6;
+  transform: translateY(30%);
+}
+.read {
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border: solid 2px rgb(228, 77, 7);
+  border-radius: 2rem;
+}
